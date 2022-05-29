@@ -1,4 +1,4 @@
-from email import charset
+from tkinter import messagebox
 import random
 # inicio tratamento do ASCII
 especiais =[]
@@ -56,4 +56,4 @@ palavra.append(aleatorioNumero)
 senha=""
 for algarismos in palavra:
     senha += chr(algarismos)
-print(senha)
+messagebox.showinfo('JANELA','sua senha é: '+senha )
